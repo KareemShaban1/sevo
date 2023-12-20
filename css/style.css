@@ -116,6 +116,8 @@ h6,
     margin-left: 8px;
 }
 
+
+
 .navbar .navbar-nav .nav-link {
     padding: 25px 15px;
     color: var(--tertiary);
@@ -209,10 +211,10 @@ h6,
 }
 
 .page-header {
-    padding-top: 12rem;
+    padding-top: 15rem;
     padding-bottom: 6rem;
-    background: url(../img/header.jpg) top left no-repeat;
-    background-size: cover;
+    background: url(../img/bg.jpg) top left no-repeat;
+    background-size:cover;
 }
 
 .page-header .breadcrumb-item,
@@ -247,7 +249,11 @@ h6,
     height: 50%;
     top: 0;
     left: 0;
-    background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../img/bg.png);
+    background: linear-gradient(
+        /* rgba(53, 94, 252, .95), rgba(53, 94, 252, .95) */
+        rgba(209, 43, 40, .90) , rgba(209, 43, 40, .90)
+        ), url(../img/bg.png);
+    /* background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../img/bg.png); */
     z-index: -1;
 }
 
@@ -547,4 +553,24 @@ h6,
 
 .copyright a:hover {
     color: var(--primary);
+}
+
+
+/* custom css */
+
+.nav-link {
+    color: var(--primary);
+}
+
+
+.partner-image {
+    max-height: 200px;
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+}
+
+.partner-image img {
+    height: 100%;
+    width: 100%;
 }
