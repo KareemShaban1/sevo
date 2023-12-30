@@ -5,8 +5,79 @@
     <meta charset="utf-8">
     <title>Sevo Translation</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
     <meta content="" name="keywords">
     <meta content="" name="description">
+    <style>
+        
+    .video-container  video[poster]{
+        height: 90%;
+        width: 70%;
+    }
+    .course-video-container {
+        display: flex;
+        justify-content: center;
+        position: relative; 
+        border:1px; 
+    }
+    .course-video-container video{ 
+        width: 100%;
+        height: 80%;
+     }
+
+     .course-video-container video[poster]{ 
+        width: 100%;
+        height: 80%;
+     }
+    
+    .video-container {
+        display: flex;
+        justify-content: center;
+        position: relative; 
+        border:1px; 
+        height: 100%;
+    }
+    .video-container video  {
+        border: 1px solid;
+        margin-top: 20px;
+    }
+    .introduction {
+        background: #fbfbfb; height:600px;
+    }
+
+    .about-img {
+        height: 600px; width: 80%;
+    }
+    /* X-Small devices (portrait phones, less than 576px) */ 
+    @media (max-width: 575.98px) { 
+        .introduction {
+        background: #fbfbfb; height:300px;
+    }
+    .about-img {
+        height: 600px; width: 100%;
+    }
+    .video-container  video[poster]{
+        height: 90%;
+        width: 100%;
+    }
+    }
+    
+    /* Small devices (landscape phones, 576px and up) */
+    @media only screen and (min-width: 576px) {
+        .introduction {
+        background: #fbfbfb; height:600px;
+    }
+    }
+    /* Medium devices (tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        
+    }
+
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) {  }
+
+
+    </style>
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -158,14 +229,28 @@
     </div>
     <!-- Carousel End -->
 
+        <div class="container-fluid introduction">
+
+                  <div class="video-container" 
+                  >
+                    <video controls poster="img/Logo.png" preload="none">
+                      <source src="img/company_video.mp4" type="video/mp4">
+                      <source src="img/company_video.mp4" type="video/ogg">
+                    </video>
+                   
+                  </div>
+                
+        </div>
+    
+
 
     <!-- About Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-4 align-items-end mb-4">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="img-fluid rounded m-auto d-flex justify-content-center "
-                    src="img/bg_1.jpg" style="height: 600px; width: 80%;">
+                    <img  class="img-fluid rounded m-auto d-flex justify-content-center about-img"
+                    src="img/bg_1.jpg" >
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">About Us</p>
@@ -351,7 +436,7 @@
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
                                         <img class="position-absolute rounded w-100 h-100" src="img/img_1.jpg"
-                                            style="object-fit: cover;" alt="">
+                                            style="object-fit: contain;" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -391,9 +476,16 @@
                         <div class="tab-pane fade" id="tab-pane-3">
                             <div class="row g-4">
                                 <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute rounded w-100 h-100" src="img/img_3.jpg"
-                                            style="object-fit: cover;" alt="">
+                                    <div class="position-relative d-flex justify-content-center align-content-center" style="height: 100%;">
+                                        <div class="course-video-container" 
+                  >
+                                        <video controls poster="img/Logo.png" preload="none">
+                                            <source src="img/course_video.mp4" type="video/mp4">
+                                            <source src="img/course_video.mp4" type="video/ogg">
+                                          </video>
+                                        </div>
+                                        <!-- <img class="position-absolute rounded w-100 h-100" src="img/img_3.jpg"
+                                            style="object-fit: cover;" alt=""> -->
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -481,7 +573,7 @@
         <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.3s">
             <div class="partner-item pe-3 pb-5">
                 <div class="partner-image mb-3 rounded-circle">
-                    <img class="img-fluid " src="img/logo1.png" alt="Partner 1">
+                    <img class="img-fluid " src="img/client_1.png" alt="Partner 1" style="height: 80%; width: 80%;">
                 </div>
                 <!-- <div class="partner-title">
                     <p>ميزانية الدولة</p>
@@ -489,7 +581,7 @@
             </div>
             <div class="partner-item pe-3 pb-5">
                 <div class="partner-image mb-3 rounded-circle">
-                    <img class="img-fluid " src="img/logo2.png" alt="Partner 2">
+                    <img class="img-fluid " src="img/client_2.png" alt="Partner 2" style="height: 80%; width: 80%;">
                 </div>
                 <!-- <div class="partner-title">
                     <h4 class="mb-0">XYZ Enterprises</h4>
@@ -497,76 +589,89 @@
             </div>
             <div class="partner-item pe-3 pb-5">
                 <div class="partner-image mb-3 rounded-circle">
-                    <img class="img-fluid " src="img/logo3.png" alt="Partner 3">
+                    <img class="img-fluid " src="img/client_3.png" alt="Partner 3" style="height: 80%; width: 80%;">
                 </div>
                 <!-- <div class="partner-title">
                     <h4 class="mb-0">123 Solutions</h4>
                 </div> -->
             </div>
-            <!-- Add more partner items as needed -->
+            <div class="partner-item pe-3 pb-5">
+                <div class="partner-image mb-3 rounded-circle">
+                    <img class="img-fluid " src="img/client_4.png" alt="Partner 4">
+                </div>
+                <!-- <div class="partner-title">
+                    <h4 class="mb-0">123 Solutions</h4>
+                </div> -->
+            </div>
+
+            <div class="partner-item pe-3 pb-5">
+                <div class="partner-image mb-3 rounded-circle">
+                    <img class="img-fluid " src="img/client_5.jpg" alt="Partner 5">
+                </div>
+                <!-- <div class="partner-title">
+                    <h4 class="mb-0">123 Solutions</h4>
+                </div> -->
+            </div>
+
+            <div class="partner-item pe-3 pb-5">
+                <div class="partner-image mb-3 rounded-circle">
+                    <img class="img-fluid " src="img/client_6.png" alt="Partner 6">
+                </div>
+                <!-- <div class="partner-title">
+                    <h4 class="mb-0">123 Solutions</h4>
+                </div> -->
+            </div>
+
+
+            <div class="partner-item pe-3 pb-5">
+                <div class="partner-image mb-3 rounded-circle">
+                    <img class="img-fluid " src="img/client_7.jpeg" alt="Partner 7">
+                </div>
+                <!-- <div class="partner-title">
+                    <h4 class="mb-0">123 Solutions</h4>
+                </div> -->
+            </div>
+
+            <div class="partner-item pe-3 pb-5">
+                <div class="partner-image mb-3 rounded-circle">
+                    <img class="img-fluid " src="img/client_8.png" alt="Partner 8">
+                </div>
+                <!-- <div class="partner-title">
+                    <h4 class="mb-0">123 Solutions</h4>
+                </div> -->
+            </div>
+
+            <div class="partner-item pe-3 pb-5">
+                <div class="partner-image mb-3 rounded-circle">
+                    <img class="img-fluid " src="img/client_9.jpg" alt="Partner 9">
+                </div>
+                <!-- <div class="partner-title">
+                    <h4 class="mb-0">123 Solutions</h4>
+                </div> -->
+            </div>
+
+
+            <div class="partner-item pe-3 pb-5">
+                <div class="partner-image mb-3 rounded-circle">
+                    <img class="img-fluid " src="img/client_10.png" alt="Partner 10">
+                </div>
+                <!-- <div class="partner-title">
+                    <h4 class="mb-0">123 Solutions</h4>
+                </div> -->
+            </div>
+
+            <div class="partner-item pe-3 pb-5">
+                <div class="partner-image mb-3 rounded-circle">
+                    <img class="img-fluid " src="img/client_11.jpg" alt="Partner 11">
+                </div>
+                <!-- <div class="partner-title">
+                    <h4 class="mb-0">123 Solutions</h4>
+                </div> -->
+            </div>
         </div>
     </div>
 </div>
 <!-- Partners End -->
-
-    <!-- Team Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Team</p>
-                <h1 class="display-5 mb-5">Exclusive Team</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <img class="img-fluid rounded" src="img/team-1.jpg" alt="">
-                        <div class="team-text">
-                            <h4 class="mb-0">Kate Winslet</h4>
-                            <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <img class="img-fluid rounded" src="img/team-2.jpg" alt="">
-                        <div class="team-text">
-                            <h4 class="mb-0">Jac Jacson</h4>
-                            <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item">
-                        <img class="img-fluid rounded" src="img/team-3.jpg" alt="">
-                        <div class="team-text">
-                            <h4 class="mb-0">Doris Jordan</h4>
-                            <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
-
 
     <!-- Testimonial Start -->
     <!-- <div class="container-xxl py-5">
@@ -691,6 +796,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+   
 </body>
 
 </html>
