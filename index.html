@@ -9,11 +9,160 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
     <style>
-        
-    .video-container  video[poster]{
-        height: 90%;
-        width: 70%;
+    .test {
+    background-color: #101013;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
     }
+
+
+    .key {
+    font-size: 10vw;
+    display: inline-block;
+    letter-spacing: 20px;
+    transition: transform 0.2s;
+    }
+
+    .key1 {
+    font-size: 5vw;
+    display: inline-block;
+    letter-spacing: 10px;
+    transition: transform 0.2s;
+    }
+
+
+
+    @keyframes pressDown1 {
+    30%,
+    40%,
+    100% {
+        transform: translateY(0);
+    }
+    35% {
+        transform: translateY(10px);
+    }
+    }
+
+    @keyframes pressDown2 {
+    70%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+    }
+
+    @keyframes pressDown3 {
+    30%,
+    40%,
+    100% {
+        transform: translateY(0);
+    }
+    35% {
+        transform: translateY(10px);
+    }
+    }
+
+    @keyframes pressDown4 {
+    40%,
+    50%,
+    100% {
+        transform: translateY(0);
+    }
+    45% {
+        transform: translateY(10px);
+    }
+    }
+
+    @keyframes pressDown5 {
+    20%,
+    30%,
+    100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(10px);
+    }
+    }
+
+    @keyframes pressDown6 {
+    60%,
+    70%,
+    100% {
+        transform: translateY(0);
+    }
+    65% {
+        transform: translateY(10px);
+    }
+    }
+
+    @keyframes pressDown7 {
+    10%,
+    20%,
+    100% {
+        transform: translateY(0);
+    }
+    15% {
+        transform: translateY(10px);
+    }
+    }
+
+    @keyframes pressDown8 {
+    35%,
+    45%,
+    100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(10px);
+    }
+    }
+
+
+
+    .key:nth-child(1) {
+    animation: pressDown1 2s infinite;
+    }
+
+    .key:nth-child(2) {
+    animation: pressDown2 3s infinite;
+    }
+
+    .key:nth-child(3) {
+    animation: pressDown3 4s infinite;
+    }
+
+    .key:nth-child(4) {
+    animation: pressDown4 2.5s infinite;
+    }
+
+    .key:nth-child(5) {
+    animation: pressDown5 2.5s infinite;
+    }
+
+    .key:nth-child(6) {
+    animation: pressDown6 3.5s infinite;
+    }
+
+    .key:nth-child(7) {
+    animation: pressDown7 2.2s infinite;
+    }
+
+    .key:nth-child(8) {
+    animation: pressDown8 3.2s infinite;
+    }
+
+
+
+
+
     .course-video-container {
         display: flex;
         justify-content: center;
@@ -32,14 +181,23 @@
     
     .video-container {
         display: flex;
+        flex-wrap: wrap;
+        align-content: center;
         justify-content: center;
         position: relative; 
         border:1px; 
-        height: 100%;
+        height: 500px;
+        width: 100%;
     }
     .video-container video  {
         border: 1px solid;
         margin-top: 20px;
+        height: 70%;
+        width: 100%;
+    }
+    .video-container  video[poster]{
+        height: 100%;
+        width: 100%;
     }
     .introduction {
         background: #fbfbfb; height:600px;
@@ -48,8 +206,20 @@
     .about-img {
         height: 600px; width: 80%;
     }
+    .header-text {
+            font-size: 30px;
+        }
+
     /* X-Small devices (portrait phones, less than 576px) */ 
-    @media (max-width: 575.98px) { 
+    @media (max-width: 575.98px) {
+        
+        .header-caption {
+            margin-top: 110px;
+        }
+        
+        .header-text {
+            font-size: 20px;
+        }
         .introduction {
         background: #fbfbfb; height:300px;
     }
@@ -60,7 +230,22 @@
         height: 90%;
         width: 100%;
     }
+
+    .key {
+    font-size: 30px;
+    display: inline-block;
+    letter-spacing: 5px;
+    transition: transform 0.2s;
     }
+
+    .key1 {
+    font-size: 20px;
+    display: inline-block;
+    letter-spacing: 0px;
+    transition: transform 0.2s;
+    }
+    }
+
     
     /* Small devices (landscape phones, 576px and up) */
     @media only screen and (min-width: 576px) {
@@ -122,7 +307,7 @@
             </div>
             <div class="col-lg-6 px-5 text-end">
                 <small><i class="fa fa-envelope text-primary me-2"></i> info@sevotranslation.com  </small>
-                <small class="ms-4"><i class="fa fa-phone-alt text-primary me-2"></i>+01204201963</small>
+                <small class="ms-4"><i class="fa fa-phone-alt text-primary me-2"></i>00201204201963</small>
             </div>
         </div>
 
@@ -163,7 +348,7 @@
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="d-none d-lg-flex ms-2">
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://www.facebook.com/sevotranslation">
                         <small class="fab fa-facebook-f text-primary"></small>
                     </a>
                     <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
@@ -187,13 +372,15 @@
                     <img class="w-100" src="img/bg.jpg" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
-                            <div class="row justify-content-start">
+                            <div class="row justify-content-start header-caption">
                                 <div class="col-lg-8">
                                     <p
-                                        class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">
+                                        class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown" style="background-color: white;">
                                         Welcome to Sevo</p>
-                                    <h1 class="mb-4 animated slideInDown" style="font-size: 30px;">Empowering global communication by breaking down language barriers, one translation at a time.
-                                    </h1>
+                                    <div style="background-color: #f5e8ce;">
+                                        <h1 class="mb-4 animated slideInDown header-text">Empowering global communication by breaking down language barriers, one translation at a time.
+                                        </h1>
+                                    </div>
                                     <!-- <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Explore More</a> -->
                                 </div>
                             </div>
@@ -204,19 +391,82 @@
                     <img class="w-100" src="img/bg.jpg" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
-                            <div class="row justify-content-start">
+                            <div class="row justify-content-start header-caption">
                                 <div class="col-lg-7">
                                     <p
-                                        class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">
+                                        class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown" style="background-color: white;">
                                         Welcome to Sevo</p>
-                                    <h1 class="mb-4 animated slideInDown" style="font-size: 30px;">"In the symphony of languages, our translations compose a harmonious melody of shared knowledge.</h1>
-                                    <!-- <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Explore More</a> -->
+                                        <div style="background-color: #f5e8ce;">
+                                        <h1 class="mb-4 animated slideInDown header-text" >In the symphony of languages, our translations compose a harmonious melody of shared knowledge.</h1>
+                                    </div>
+
+                                        <!-- <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Explore More</a> -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/bg.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start header-caption">
+                                <div class="col-lg-7">
+                                    <p
+                                        class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown" style="background-color: white;">
+                                        Welcome to Sevo</p>
+                                        <div style="background-color: #f5e8ce;">
+                                        <h1 class="mb-4 animated slideInDown header-text" >Empower yourself with knowledge, fuel your ambition with action.</h1>
+                                    </div>
+
+                                        <!-- <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Explore More</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/bg.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start header-caption">
+                                <div class="col-lg-7">
+                                    <p
+                                        class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown" style="background-color: white;">
+                                        Welcome to Sevo</p>
+                                        <div style="background-color: #f5e8ce;">
+                                        <h1 class="mb-4 animated slideInDown header-text">Immerse yourself in our interactive English courses.</h1>
+                                    </div>
+
+                                        <!-- <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Explore More</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <img class="w-100" src="img/bg.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start header-caption">
+                                <div class="col-lg-7">
+                                    <p
+                                        class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown" style="background-color: white;">
+                                        Welcome to Sevo</p>
+                                        <div style="background-color: #f5e8ce;">
+                                        <h1 class="mb-4 animated slideInDown header-text">Dive into English conversations with our language partners.</h1>
+                                    </div>
+
+                                        <!-- <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Explore More</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
+            
             <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -229,29 +479,12 @@
     </div>
     <!-- Carousel End -->
 
-        <div class="container-fluid introduction">
-
-                  <div class="video-container" 
-                  >
-                    <video controls poster="img/Logo.png" preload="none">
-                      <source src="img/company_video.mp4" type="video/mp4">
-                      <source src="img/company_video.mp4" type="video/ogg">
-                    </video>
-                   
-                  </div>
-                
-        </div>
-    
-
 
     <!-- About Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-4 align-items-end mb-4">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <img  class="img-fluid rounded m-auto d-flex justify-content-center about-img"
-                    src="img/bg_1.jpg" >
-                </div>
+               
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">About Us</p>
                     <!-- <h1 class="display-5 mb-4">We Help Our Clients To Grow Their Business</h1> -->
@@ -259,9 +492,9 @@
                         eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
                     </p> -->
                     <p class="mb-5">
-                        <span style="font-weight: bold; font-size: 25px; color:var(--primary)">
+                        <span style="font-weight: bold; font-size: 35px; color:var(--primary)">
                             Sevo
-                        </span> Certified Translation and Languages, based in Cairo, Egypt, is a fast growing translation agency. We translate more than 120 language combinations for clients all over the world. We are certified under the supervision of Arab Federation for Translators (ARBFT). For more than 13 years, we have translated, proofread and edited hundreds of thousands of documents in different fields (e.g. medical, legal, financial, literal, technical, localization, general) for high profile companies all over the world. We care about quality as much as about confidentiality. Our network of translators has proved proficiency in all fields. We assign each translation task to the most professional native in the field. Hence, we guarantee you workflow. 
+                        </span style="font-size: 30px;"> Certified Translation and Languages, based in Cairo, Egypt, is a fast growing translation agency. We translate more than 120 language combinations for clients all over the world. We are certified under the supervision of Arab Federation for Translators (ARBFT). For more than 13 years, we have translated, proofread and edited hundreds of thousands of documents in different fields (e.g. medical, legal, financial, literal, technical, localization, general) for high profile companies all over the world. We care about quality as much as about confidentiality. Our network of translators has proved proficiency in all fields. We assign each translation task to the most professional native in the field. Hence, we guarantee you workflow. 
                     </p>
                     <div class="border rounded p-4">
                         <nav>
@@ -295,45 +528,51 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    
+                    <!-- <img  class="rounded m-auto d-flex justify-content-center about-img"
+                    src="img/bg_1.jpg" > -->
+                    <div class="video-container" 
+                    >
+                      <video controls preload="none" autoplay>
+                        <source src="img/company_video.mp4" type="video/mp4">
+                        <source src="img/company_video.mp4" type="video/ogg">
+                      </video>
+                     
+                    </div>
+                </div>
             </div>
           
         </div>
     </div>
     <!-- About End -->
 
+    <!-- <div class="container-xxl py-5"> -->
+    <div class="test">
+        
+        <div class="keyboard">
+            <span class="key">S</span>
+            <span class="key">E</span>
+            <span class="key">V</span>
+            <span class="key">O</span>
+            <span class="key1">T</span>
+            <span class="key1">R</span>
+            <span class="key1">A</span>
+            <span class="key1">N</span>
+            <span class="key1">S</span>
+            <span class="key1">L</span>
+            <span class="key1">A</span>
+            <span class="key1">T</span>
+            <span class="key1">I</span>
+            <span class="key1">O</span>
+            <span class="key1">N</span>
+          </div>
+                  
 
-    <!-- Facts Start -->
-    <div class="container-fluid facts my-5 py-5">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
-                    <i class="fa fa-users fa-3x text-white mb-3"></i>
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 text-white">Happy Clients</span>
-                    <hr class="bg-white w-25 mx-auto mb-0">
-                </div>
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
-                    <i class="fa fa-check fa-3x text-white mb-3"></i>
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 text-white">Projects Completed</span>
-                    <hr class="bg-white w-25 mx-auto mb-0">
-                </div>
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
-                    <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 text-white">Dedicated Staff</span>
-                    <hr class="bg-white w-25 mx-auto mb-0">
-                </div>
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
-                    <i class="fa fa-award fa-3x text-white mb-3"></i>
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 text-white">Awards Achieved</span>
-                    <hr class="bg-white w-25 mx-auto mb-0">
-                </div>
-            </div>
-        </div>
     </div>
-    <!-- Facts End -->
+
+    <!-- </div> -->
 
 
     <!-- Features Start -->
@@ -343,10 +582,7 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Services</p>
                     <h1 class="display-5 mb-4">Services We Are Provide</h1>
-                    <!-- <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
-                        eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
-                    </p> -->
-                    <!-- <a class="btn btn-primary py-3 px-5" href="">Explore More</a> -->
+                    
                 </div>
                 <div class="col-lg-6">
                     <div class="row g-4 align-items-center">
@@ -367,7 +603,7 @@
                                         <img src="img/interpreter-icon.png" alt="" style="height: 50px; width: 50px; max-height: 50px;">
                                         <h4 class="mb-3">Interpretation</h4>
                                         <p class="mb-3">Simultaneous and consecutive</p>
-                                       
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -386,12 +622,12 @@
                                 <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
                                     <div class="feature-box border rounded p-4 text-center ">
                                         <!-- <i class="fa fa-check fa-3x text-primary mb-3"></i> -->
-                                       
+                                        
                                         <img src="img/fluent.png" alt="" style="height: 80px; width: 80px; max-height: 50;">
                                         
                                         <h4 class="mb-3">Teaching adults</h4>
                                         <p class="mb-3">We teach adults of different ages how to translate and write professional English to assist the organization they work for. </p>
-                                       
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -403,9 +639,42 @@
     </div>
     <!-- Features End -->
 
+    <!-- Facts Start -->
+    <div class="container-fluid facts my-5 py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <i class="fa fa-users fa-3x text-white mb-3"></i>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">1002</h1>
+                    <span class="fs-5 text-white">Happy Clients</span>
+                    <hr class="bg-white w-25 mx-auto mb-0">
+                </div>
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                    <i class="fa fa-check fa-3x text-white mb-3"></i>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">2354343</h1>
+                    <span class="fs-5 text-white">Projects Completed</span>
+                    <hr class="bg-white w-25 mx-auto mb-0">
+                </div>
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">65</h1>
+                    <span class="fs-5 text-white">Dedicated Staff</span>
+                    <hr class="bg-white w-25 mx-auto mb-0">
+                </div>
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                    <i class="fa fa-award fa-3x text-white mb-3"></i>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">99</h1>
+                    <span class="fs-5 text-white">Awards Achieved</span>
+                    <hr class="bg-white w-25 mx-auto mb-0">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
 
     <!-- Service Start -->
-    <div class="container-xxl service py-5">
+    <div class="container-xxl service py-5" id="service">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Services</p>
@@ -431,7 +700,7 @@
                 </div>
                 <div class="col-lg-8">
                     <div class="tab-content w-100">
-                        <div class="tab-pane fade show active" id="tab-pane-1">
+                        <div class="tab-pane fade show active" id="tab-pane-1" id="tab_1">
                             <div class="row g-4">
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
@@ -441,7 +710,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <h3 class="mb-4">Translation into more than 120 Language Combinations</h3>
-                                    <p class="mb-4">
+                                    <p class="mb-4" style="font-size: 20px;">
                                         Through our wide network of native translators all over the world, we present you certified translation of more than 120 languages. We assure you 100% quality. We pay much attention not only to the text but to produce original-like translation in formatting, layout, etc. as well. We select you the most professional translator(s) based on the specialization. 
                                         </p>
                                     <!-- <p><i class="fa fa-check text-primary me-3"></i>Secured Loans</p>
@@ -451,7 +720,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="tab-pane-2">
+                        <div class="tab-pane fade" id="tab-pane-2" id="tab_2">
                             <div class="row g-4">
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
@@ -461,7 +730,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <h3 class="mb-4">Assisting Business people</h3>
-                                    <p class="mb-4">Out of the awareness that business people require translation and interpretation in their business as they deal with different countries, Sevo Certified Translation and Languages is pleased to meet this requirement to the fullest. 
+                                    <p class="mb-4" style="font-size: 18px;">Out of the awareness that business people require translation and interpretation in their business as they deal with different countries, Sevo Certified Translation and Languages is pleased to meet this requirement to the fullest. 
                                         In addition to translation, we provide businesspeople with simultaneous interpretation and consecutive interpretation. No more worries about meetings and conferences that include foreign people; we provide you A-Z simultaneous and consecutive interpretation service. 
                                         <!-- Our service enjoys the strictest confidence. We paint a wonderful image of your organization.  -->
                                         <!-- Moreover, upon request, we will select the most suitable certified translator to accompany you to complete some urgent procedure that requires an certified translator outdoors (notarization authority, courts, etc.)  -->
@@ -484,13 +753,12 @@
                                             <source src="img/course_video.mp4" type="video/ogg">
                                           </video>
                                         </div>
-                                        <!-- <img class="position-absolute rounded w-100 h-100" src="img/img_3.jpg"
-                                            style="object-fit: cover;" alt=""> -->
+                                       
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <h3 class="mb-4">Translation Course</h3>
-                                    <p class="mb-4">Sevo Certified Translation and Languages present a 100% practical translation course. It does not depend on theoretical books but rather on experience of more than 13 years in the field. If you have the desire to work in big companies, we are your gateway to achieve this. We teach you how to write solid English and help you promoting for your career. We give very special rates for companies and groups. </p>
+                                    <p class="mb-4" style="font-size: 20px;">Sevo Certified Translation and Languages present a 100% practical translation course. It does not depend on theoretical books but rather on experience of more than 13 years in the field. If you have the desire to work in big companies, we are your gateway to achieve this. We teach you how to write solid English and help you promoting for your career. We give very special rates for companies and groups. </p>
                                     <!-- <p><i class="fa fa-check text-primary me-3"></i>Secured Loans</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Credit Facilities</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Cash Advanced</p>
@@ -564,217 +832,159 @@
 
 
     <!-- Partners Start -->
-<div class="container-xxl py-5">
-    <div class="container">
-        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-            <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Partners</p>
-            <h1 class="display-5 mb-5">Explore Our Trusted Partnerships</h1>
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Partners</p>
+                <h1 class="display-5 mb-5">Explore Our Trusted Partnerships</h1>
+            </div>
+            <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.3s">
+                <div class="partner-item pe-3 pb-5">
+                    <div class="partner-image mb-3 rounded-circle">
+                        <img class="img-fluid " src="img/client_1.png" alt="Partner 1" style="height: 80%; width: 80%;">
+                    </div>
+                    <!-- <div class="partner-title">
+                        <p>ميزانية الدولة</p>
+                    </div> -->
+                </div>
+                <div class="partner-item pe-3 pb-5">
+                    <div class="partner-image mb-3 rounded-circle">
+                        <img class="img-fluid " src="img/client_2.png" alt="Partner 2" style="height: 80%; width: 80%;">
+                    </div>
+                    <!-- <div class="partner-title">
+                        <h4 class="mb-0">XYZ Enterprises</h4>
+                    </div> -->
+                </div>
+                <div class="partner-item pe-3 pb-5">
+                    <div class="partner-image mb-3 rounded-circle">
+                        <img class="img-fluid " src="img/client_3.png" alt="Partner 3" style="height: 80%; width: 80%;">
+                    </div>
+                    <!-- <div class="partner-title">
+                        <h4 class="mb-0">123 Solutions</h4>
+                    </div> -->
+                </div>
+                <div class="partner-item pe-3 pb-5">
+                    <div class="partner-image mb-3 rounded-circle">
+                        <img class="img-fluid " src="img/client_4.png" alt="Partner 4">
+                    </div>
+                    <!-- <div class="partner-title">
+                        <h4 class="mb-0">123 Solutions</h4>
+                    </div> -->
+                </div>
+
+                <div class="partner-item pe-3 pb-5">
+                    <div class="partner-image mb-3 rounded-circle">
+                        <img class="img-fluid " src="img/client_5.jpg" alt="Partner 5">
+                    </div>
+                    <!-- <div class="partner-title">
+                        <h4 class="mb-0">123 Solutions</h4>
+                    </div> -->
+                </div>
+
+                <div class="partner-item pe-3 pb-5">
+                    <div class="partner-image mb-3 rounded-circle">
+                        <img class="img-fluid " src="img/client_6.png" alt="Partner 6">
+                    </div>
+                    <!-- <div class="partner-title">
+                        <h4 class="mb-0">123 Solutions</h4>
+                    </div> -->
+                </div>
+
+
+                <div class="partner-item pe-3 pb-5">
+                    <div class="partner-image mb-3 rounded-circle">
+                        <img class="img-fluid " src="img/client_7.jpeg" alt="Partner 7">
+                    </div>
+                    <!-- <div class="partner-title">
+                        <h4 class="mb-0">123 Solutions</h4>
+                    </div> -->
+                </div>
+
+                <div class="partner-item pe-3 pb-5">
+                    <div class="partner-image mb-3 rounded-circle">
+                        <img class="img-fluid " src="img/client_8.png" alt="Partner 8">
+                    </div>
+                    <!-- <div class="partner-title">
+                        <h4 class="mb-0">123 Solutions</h4>
+                    </div> -->
+                </div>
+
+                <div class="partner-item pe-3 pb-5">
+                    <div class="partner-image mb-3 rounded-circle">
+                        <img class="img-fluid " src="img/client_9.jpg" alt="Partner 9">
+                    </div>
+                    <!-- <div class="partner-title">
+                        <h4 class="mb-0">123 Solutions</h4>
+                    </div> -->
+                </div>
+
+
+                <div class="partner-item pe-3 pb-5">
+                    <div class="partner-image mb-3 rounded-circle">
+                        <img class="img-fluid " src="img/client_10.png" alt="Partner 10">
+                    </div>
+                    <!-- <div class="partner-title">
+                        <h4 class="mb-0">123 Solutions</h4>
+                    </div> -->
+                </div>
+
+                <div class="partner-item pe-3 pb-5">
+                    <div class="partner-image mb-3 rounded-circle">
+                        <img class="img-fluid " src="img/client_11.jpg" alt="Partner 11">
+                    </div>
+                    <!-- <div class="partner-title">
+                        <h4 class="mb-0">123 Solutions</h4>
+                    </div> -->
+                </div>
+            </div>
         </div>
-        <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.3s">
-            <div class="partner-item pe-3 pb-5">
-                <div class="partner-image mb-3 rounded-circle">
-                    <img class="img-fluid " src="img/client_1.png" alt="Partner 1" style="height: 80%; width: 80%;">
-                </div>
-                <!-- <div class="partner-title">
-                    <p>ميزانية الدولة</p>
-                </div> -->
-            </div>
-            <div class="partner-item pe-3 pb-5">
-                <div class="partner-image mb-3 rounded-circle">
-                    <img class="img-fluid " src="img/client_2.png" alt="Partner 2" style="height: 80%; width: 80%;">
-                </div>
-                <!-- <div class="partner-title">
-                    <h4 class="mb-0">XYZ Enterprises</h4>
-                </div> -->
-            </div>
-            <div class="partner-item pe-3 pb-5">
-                <div class="partner-image mb-3 rounded-circle">
-                    <img class="img-fluid " src="img/client_3.png" alt="Partner 3" style="height: 80%; width: 80%;">
-                </div>
-                <!-- <div class="partner-title">
-                    <h4 class="mb-0">123 Solutions</h4>
-                </div> -->
-            </div>
-            <div class="partner-item pe-3 pb-5">
-                <div class="partner-image mb-3 rounded-circle">
-                    <img class="img-fluid " src="img/client_4.png" alt="Partner 4">
-                </div>
-                <!-- <div class="partner-title">
-                    <h4 class="mb-0">123 Solutions</h4>
-                </div> -->
-            </div>
-
-            <div class="partner-item pe-3 pb-5">
-                <div class="partner-image mb-3 rounded-circle">
-                    <img class="img-fluid " src="img/client_5.jpg" alt="Partner 5">
-                </div>
-                <!-- <div class="partner-title">
-                    <h4 class="mb-0">123 Solutions</h4>
-                </div> -->
-            </div>
-
-            <div class="partner-item pe-3 pb-5">
-                <div class="partner-image mb-3 rounded-circle">
-                    <img class="img-fluid " src="img/client_6.png" alt="Partner 6">
-                </div>
-                <!-- <div class="partner-title">
-                    <h4 class="mb-0">123 Solutions</h4>
-                </div> -->
-            </div>
+    </div>
+    <!-- Partners End -->
 
 
-            <div class="partner-item pe-3 pb-5">
-                <div class="partner-image mb-3 rounded-circle">
-                    <img class="img-fluid " src="img/client_7.jpeg" alt="Partner 7">
-                </div>
-                <!-- <div class="partner-title">
-                    <h4 class="mb-0">123 Solutions</h4>
-                </div> -->
-            </div>
 
-            <div class="partner-item pe-3 pb-5">
-                <div class="partner-image mb-3 rounded-circle">
-                    <img class="img-fluid " src="img/client_8.png" alt="Partner 8">
+   <!-- Footer Start -->
+   <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6 col-12">
+                <h4 class="text-white mb-4">Our Office</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>47 Ahmed Esmat St., Apt. 4, Second Floor, Ain Shams, Cairo, Egypt</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>00201204201963</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@sevotranslation.com  </p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                            class="fab fa-youtube"></i></a>
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                            class="fab fa-linkedin-in"></i></a>
                 </div>
-                <!-- <div class="partner-title">
-                    <h4 class="mb-0">123 Solutions</h4>
-                </div> -->
             </div>
-
-            <div class="partner-item pe-3 pb-5">
-                <div class="partner-image mb-3 rounded-circle">
-                    <img class="img-fluid " src="img/client_9.jpg" alt="Partner 9">
-                </div>
-                <!-- <div class="partner-title">
-                    <h4 class="mb-0">123 Solutions</h4>
-                </div> -->
+            <!-- <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-4">Services</h4>
+                <a class="btn btn-link" href="">Translate Many Languages</a>
+                <a class="btn btn-link" href="">Assisting Business people</a>
+                <a class="btn btn-link" href="">Translation Course</a>
+            </div> -->
+            <div class="col-lg-9 col-md-6 col-12">
+                <iframe
+              
+                frameborder="0"
+                style="border:0"
+                allowfullscreen
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.255993746872!2d31.3245146!3d30.1280644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145815b138cbf15b%3A0xf820b85552829719!2s43%20Ahmed%20Esmat%2C%20Ain%20Shams%20Sharkeya%2C%20Ain%20Shams%2C%20Cairo%20Governorate%204542217!5e0!3m2!1sen!2seg!4v1644277099804!5m2!1sen!2seg"
+              ></iframe>
+              
             </div>
-
-
-            <div class="partner-item pe-3 pb-5">
-                <div class="partner-image mb-3 rounded-circle">
-                    <img class="img-fluid " src="img/client_10.png" alt="Partner 10">
-                </div>
-                <!-- <div class="partner-title">
-                    <h4 class="mb-0">123 Solutions</h4>
-                </div> -->
-            </div>
-
-            <div class="partner-item pe-3 pb-5">
-                <div class="partner-image mb-3 rounded-circle">
-                    <img class="img-fluid " src="img/client_11.jpg" alt="Partner 11">
-                </div>
-                <!-- <div class="partner-title">
-                    <h4 class="mb-0">123 Solutions</h4>
-                </div> -->
-            </div>
+            
         </div>
     </div>
 </div>
-<!-- Partners End -->
+<!-- Footer End -->
 
-    <!-- Testimonial Start -->
-    <!-- <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Testimonial</p>
-                <h1 class="display-5 mb-5">What Our Clients Say!</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.3s">
-                <div class="testimonial-item">
-                    <div class="testimonial-text border rounded p-4 pt-5 mb-5">
-                        <div class="btn-square bg-white border rounded-circle">
-                            <i class="fa fa-quote-right fa-2x text-primary"></i>
-                        </div>
-                        Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
-                        lorem magna ut et, nonumy et labore et tempor diam tempor erat.
-                    </div>
-                    <img class="rounded-circle mb-3" src="img/testimonial-1.jpg" alt="">
-                    <h4>Client Name</h4>
-                    <span>Profession</span>
-                </div>
-                <div class="testimonial-item">
-                    <div class="testimonial-text border rounded p-4 pt-5 mb-5">
-                        <div class="btn-square bg-white border rounded-circle">
-                            <i class="fa fa-quote-right fa-2x text-primary"></i>
-                        </div>
-                        Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
-                        lorem magna ut et, nonumy et labore et tempor diam tempor erat.
-                    </div>
-                    <img class="rounded-circle mb-3" src="img/testimonial-2.jpg" alt="">
-                    <h4>Client Name</h4>
-                    <span>Profession</span>
-                </div>
-                <div class="testimonial-item">
-                    <div class="testimonial-text border rounded p-4 pt-5 mb-5">
-                        <div class="btn-square bg-white border rounded-circle">
-                            <i class="fa fa-quote-right fa-2x text-primary"></i>
-                        </div>
-                        Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
-                        lorem magna ut et, nonumy et labore et tempor diam tempor erat.
-                    </div>
-                    <img class="rounded-circle mb-3" src="img/testimonial-3.jpg" alt="">
-                    <h4>Client Name</h4>
-                    <span>Profession</span>
-                </div>
-                <div class="testimonial-item">
-                    <div class="testimonial-text border rounded p-4 pt-5 mb-5">
-                        <div class="btn-square bg-white border rounded-circle">
-                            <i class="fa fa-quote-right fa-2x text-primary"></i>
-                        </div>
-                        Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
-                        lorem magna ut et, nonumy et labore et tempor diam tempor erat.
-                    </div>
-                    <img class="rounded-circle mb-3" src="img/testimonial-4.jpg" alt="">
-                    <h4>Client Name</h4>
-                    <span>Profession</span>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Testimonial End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>47 Ahmed Esmat St., Apt. 4, Second Floor, Ain Shams, Cairo, Egypt</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+01204201963</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@sevotranslation.com  </p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                                class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Services</h4>
-                    <a class="btn btn-link" href="">Translate Many Languages</a>
-                    <a class="btn btn-link" href="">Assisting Business people</a>
-                    <a class="btn btn-link" href="">Translation Course</a>
-                 
-                </div>
-                <!-- <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div> -->
-                
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
 
 
    
@@ -796,7 +1006,31 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-   
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var video = document.querySelector('.video-container video');
+            var aboutSection = document.querySelector('.container-xxl');
+        
+            var options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5
+            };
+        
+            var observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach(function (entry) {
+                    // if (entry.isIntersecting) {
+                    //     video.play();
+                    // } else {
+                    //     video.pause();
+                    // }
+                });
+            }, options);
+        
+            observer.observe(aboutSection);
+        });
+        </script> -->
+        
 </body>
 
 </html>
