@@ -1019,11 +1019,11 @@
         
             var observer = new IntersectionObserver(function (entries, observer) {
                 entries.forEach(function (entry) {
-                    // if (entry.isIntersecting) {
-                    //     video.play();
-                    // } else {
-                    //     video.pause();
-                    // }
+                    if (entry.isIntersecting) {
+                        video.play();
+                    } else {
+                        video.pause();
+                    }
                 });
             }, options);
         
