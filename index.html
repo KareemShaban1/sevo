@@ -9,6 +9,92 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
     <style>
+
+.float-buttons {
+    position: fixed;
+    bottom: 80px; 
+    right: 20px;
+    z-index: 999;
+    animation: float-buttons-animation 1s infinite;
+}
+
+.whatsapp-icon {
+    width: 80px;
+    height: 80px;
+}
+@keyframes float-buttons-animation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+        .info{
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+
+        }
+        .info img {
+            height: 250px;
+            width: 50%;
+        }
+        .info h1 {
+            margin: 0;
+        }
+
+        .info p {
+            color: rgb(0, 0, 0);
+        }
+
+        /* Explanation in JS tab */
+
+/* Cool font from Google Fonts! */
+@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
+
+
+#info-container {
+	/* Center the text in the viewport. */
+	position: relative;
+	margin: auto;
+	/* width: 50vw; */
+    width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	/* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
+	filter: url(#threshold) blur(0.6px);
+    background-color: var(--primary);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Your average text styling */
+#text1, #text2 {
+	position: absolute;
+	width: 100%;
+	display: inline-block;
+	font-family: 'Raleway', sans-serif;
+	font-size: 80pt;
+	
+	text-align: center;
+	
+	user-select: none;
+
+    color: white;
+}
+
+        
     .test {
     background-color: #101013;
     color: #fff;
@@ -244,6 +330,16 @@
     letter-spacing: 0px;
     transition: transform 0.2s;
     }
+
+    #text1, #text2 {
+	position: absolute;
+	width: 100%;
+	display: inline-block;
+	font-family: 'Raleway', sans-serif;
+	font-size: 30pt;
+	text-align: center;
+	user-select: none;
+}
     }
 
     
@@ -829,6 +925,54 @@
     </div>
     <!-- Callback End -->
 
+    <!-- Info -->
+
+    <div class="info">
+
+        <div class="row">
+            
+            <div class="col-md-6 mb-5">
+
+            <!-- The two texts -->
+            <div id="info-container">
+                <span id="text1"></span>
+                <span id="text2"></span>
+            </div>
+
+            <!-- The SVG filter used to create the merging effect -->
+            <svg id="filters">
+                <defs>
+                    <filter id="threshold">
+                        <!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
+                        <feColorMatrix in="SourceGraphic"
+                                type="matrix"
+                                values="1 0 0 0 0
+                                                0 1 0 0 0
+                                                0 0 1 0 0
+                                                0 0 0 255 -140" />
+                    </filter>
+                </defs>
+            </svg>
+                
+            </div>
+
+            <div class="col-md-6 mb-5">
+
+                <p>
+                    Greetings, We, Sevo Certified Translation & Languages, based in Egypt, are pleased to present you our translation services. We are accredited internationally under the supervision of Arab Federation for Translators (ARBFT) No. 11473, in 122 countries. Our network of professional translators, editors, proofreaders and interpreters extends to many countries and most of them are natives (university lecturers at least). Any translation task received from a client is assigned to the most professional translator(s) in the field then revised duly. We translate original-like translations in everything (quality, format, page layout, etc.). 
+                </p>
+
+                <p>
+                    Moreover, we are very dedicated to our clients' deadlines. We reply you immediately after checking your assigned job. For companies that deal with us regularly, we give them priority in everything. We promise you will experience a new level of quality.
+                </p>
+
+            </div>
+        </div>
+       
+
+
+        </div>
+    </div>
 
 
     <!-- Partners Start -->
@@ -943,14 +1087,16 @@
 
 
 
-   <!-- Footer Start -->
-   <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
         <div class="row g-5">
-            <div class="col-lg-3 col-md-6 col-12">
+            <div class="col-lg-6 col-md-6 col-12">
                 <h4 class="text-white mb-4">Our Office</h4>
                 <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>47 Ahmed Esmat St., Apt. 4, Second Floor, Ain Shams, Cairo, Egypt</p>
-                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>00201204201963</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>002 01204201963</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>002 01275234701</p>
+                
                 <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@sevotranslation.com  </p>
                 <div class="d-flex pt-2">
                     <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
@@ -963,17 +1109,12 @@
                             class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
-            <!-- <div class="col-lg-3 col-md-6">
-                <h4 class="text-white mb-4">Services</h4>
-                <a class="btn btn-link" href="">Translate Many Languages</a>
-                <a class="btn btn-link" href="">Assisting Business people</a>
-                <a class="btn btn-link" href="">Translation Course</a>
-            </div> -->
-            <div class="col-lg-9 col-md-6 col-12">
+           
+            <div class="col-lg-6 col-md-6 col-12">
                 <iframe
               
                 frameborder="0"
-                style="border:0"
+                style="border:0; width: 100%; height: 100%;"
                 allowfullscreen
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.255993746872!2d31.3245146!3d30.1280644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145815b138cbf15b%3A0xf820b85552829719!2s43%20Ahmed%20Esmat%2C%20Ain%20Shams%20Sharkeya%2C%20Ain%20Shams%2C%20Cairo%20Governorate%204542217!5e0!3m2!1sen!2seg!4v1644277099804!5m2!1sen!2seg"
               ></iframe>
@@ -981,9 +1122,13 @@
             </div>
             
         </div>
+        <div class="row">
+            <div class="col-12 text-center mt-5">All Copyright Reserved @ 
+                <a href="https://portfolio.kareemsoft.online/" style="color: var(--primary);">Kareem Shaban</a> </div>
+        </div>
     </div>
-</div>
-<!-- Footer End -->
+    </div>
+    <!-- Footer End -->
 
 
 
@@ -994,6 +1139,18 @@
     <a href="#" class="btn btn-lg btn-lg-square rounded-circle back-to-top" style="background-color: var(--primary);"><i
             class="bi bi-arrow-up" style="color: white;"></i></a>
 
+            <div class="float-buttons">
+                <div class="d-flex justify-content-center">
+                    <a href="tel:+00201204201963" target="_blank">
+                        <img src="img/phone_icon.png" height="55" width="55" alt="WhatsApp">
+                    </a>
+                </div>
+        
+                <a href="https://api.whatsapp.com/send?phone=00201275234701" target="_blank">
+                    <img src="img/whatsapp_logo.webp" alt="WhatsApp" class="whatsapp-icon">
+                </a>
+        
+            </div>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -1006,30 +1163,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var video = document.querySelector('.video-container video');
-            var aboutSection = document.querySelector('.container-xxl');
-        
-            var options = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.5
-            };
-        
-            var observer = new IntersectionObserver(function (entries, observer) {
-                entries.forEach(function (entry) {
-                    if (entry.isIntersecting) {
-                        video.play();
-                    } else {
-                        video.pause();
-                    }
-                });
-            }, options);
-        
-            observer.observe(aboutSection);
-        });
-        </script>
+    
         
 </body>
 
