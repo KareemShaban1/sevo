@@ -10,354 +10,6 @@
     <meta content="" name="description">
     <style>
 
-.float-buttons {
-    position: fixed;
-    bottom: 80px; 
-    right: 20px;
-    z-index: 999;
-    animation: float-buttons-animation 1s infinite;
-}
-
-.whatsapp-icon {
-    width: 80px;
-    height: 80px;
-}
-@keyframes float-buttons-animation {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-10px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-
-        .info{
-            background-color: #ffffff;
-            display: flex;
-            justify-content: space-between;
-            padding: 40px;
-
-        }
-        .info img {
-            height: 250px;
-            width: 50%;
-        }
-        .info h1 {
-            margin: 0;
-        }
-
-        .info p {
-            color: rgb(0, 0, 0);
-        }
-
-        /* Explanation in JS tab */
-
-/* Cool font from Google Fonts! */
-@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
-
-
-#info-container {
-	/* Center the text in the viewport. */
-	position: relative;
-	margin: auto;
-	/* width: 50vw; */
-    width: 100%;
-	height: 100%;
-	top: 0;
-	bottom: 0;
-	/* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
-	filter: url(#threshold) blur(0.6px);
-    background-color: var(--primary);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-/* Your average text styling */
-#text1, #text2 {
-	position: absolute;
-	width: 100%;
-	display: inline-block;
-	font-family: 'Raleway', sans-serif;
-	font-size: 80pt;
-	
-	text-align: center;
-	
-	user-select: none;
-
-    color: white;
-}
-
-        
-    .test {
-    background-color: #101013;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    }
-
-
-    .key {
-    font-size: 10vw;
-    display: inline-block;
-    letter-spacing: 20px;
-    transition: transform 0.2s;
-    }
-
-    .key1 {
-    font-size: 5vw;
-    display: inline-block;
-    letter-spacing: 10px;
-    transition: transform 0.2s;
-    }
-
-
-
-    @keyframes pressDown1 {
-    30%,
-    40%,
-    100% {
-        transform: translateY(0);
-    }
-    35% {
-        transform: translateY(10px);
-    }
-    }
-
-    @keyframes pressDown2 {
-    70%,
-    80%,
-    100% {
-        transform: translateY(0);
-    }
-    75% {
-        transform: translateY(10px);
-    }
-    }
-
-    @keyframes pressDown3 {
-    30%,
-    40%,
-    100% {
-        transform: translateY(0);
-    }
-    35% {
-        transform: translateY(10px);
-    }
-    }
-
-    @keyframes pressDown4 {
-    40%,
-    50%,
-    100% {
-        transform: translateY(0);
-    }
-    45% {
-        transform: translateY(10px);
-    }
-    }
-
-    @keyframes pressDown5 {
-    20%,
-    30%,
-    100% {
-        transform: translateY(0);
-    }
-    25% {
-        transform: translateY(10px);
-    }
-    }
-
-    @keyframes pressDown6 {
-    60%,
-    70%,
-    100% {
-        transform: translateY(0);
-    }
-    65% {
-        transform: translateY(10px);
-    }
-    }
-
-    @keyframes pressDown7 {
-    10%,
-    20%,
-    100% {
-        transform: translateY(0);
-    }
-    15% {
-        transform: translateY(10px);
-    }
-    }
-
-    @keyframes pressDown8 {
-    35%,
-    45%,
-    100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(10px);
-    }
-    }
-
-
-
-    .key:nth-child(1) {
-    animation: pressDown1 2s infinite;
-    }
-
-    .key:nth-child(2) {
-    animation: pressDown2 3s infinite;
-    }
-
-    .key:nth-child(3) {
-    animation: pressDown3 4s infinite;
-    }
-
-    .key:nth-child(4) {
-    animation: pressDown4 2.5s infinite;
-    }
-
-    .key:nth-child(5) {
-    animation: pressDown5 2.5s infinite;
-    }
-
-    .key:nth-child(6) {
-    animation: pressDown6 3.5s infinite;
-    }
-
-    .key:nth-child(7) {
-    animation: pressDown7 2.2s infinite;
-    }
-
-    .key:nth-child(8) {
-    animation: pressDown8 3.2s infinite;
-    }
-
-
-
-
-
-    .course-video-container {
-        display: flex;
-        justify-content: center;
-        position: relative; 
-        border:1px; 
-    }
-    .course-video-container video{ 
-        width: 100%;
-        height: 80%;
-     }
-
-     .course-video-container video[poster]{ 
-        width: 100%;
-        height: 80%;
-     }
-    
-    .video-container {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-        position: relative; 
-        border:1px; 
-        height: 500px;
-        width: 100%;
-    }
-    .video-container video  {
-        border: 1px solid;
-        margin-top: 20px;
-        height: 70%;
-        width: 100%;
-    }
-    .video-container  video[poster]{
-        height: 100%;
-        width: 100%;
-    }
-    .introduction {
-        background: #fbfbfb; height:600px;
-    }
-
-    .about-img {
-        height: 600px; width: 80%;
-    }
-    .header-text {
-            font-size: 30px;
-        }
-
-    /* X-Small devices (portrait phones, less than 576px) */ 
-    @media (max-width: 575.98px) {
-        
-        .header-caption {
-            margin-top: 110px;
-        }
-        
-        .header-text {
-            font-size: 20px;
-        }
-        .introduction {
-        background: #fbfbfb; height:300px;
-    }
-    .about-img {
-        height: 600px; width: 100%;
-    }
-    .video-container  video[poster]{
-        height: 90%;
-        width: 100%;
-    }
-
-    .key {
-    font-size: 30px;
-    display: inline-block;
-    letter-spacing: 5px;
-    transition: transform 0.2s;
-    }
-
-    .key1 {
-    font-size: 20px;
-    display: inline-block;
-    letter-spacing: 0px;
-    transition: transform 0.2s;
-    }
-
-    #text1, #text2 {
-	position: absolute;
-	width: 100%;
-	display: inline-block;
-	font-family: 'Raleway', sans-serif;
-	font-size: 30pt;
-	text-align: center;
-	user-select: none;
-}
-    }
-
-    
-    /* Small devices (landscape phones, 576px and up) */
-    @media only screen and (min-width: 576px) {
-        .introduction {
-        background: #fbfbfb; height:600px;
-    }
-    }
-    /* Medium devices (tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
-        
-    }
-
-    /* Large devices (desktops, 992px and up) */
-    @media (min-width: 992px) {  }
-
-
     </style>
 
     <!-- Favicon -->
@@ -449,6 +101,9 @@
                     </a>
                     <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
                         <small class="fab fa-instagram text-primary"></small>
+                    </a>
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+                        <small class="fab fa-linkedin-in text-primary"></small>
                     </a>
                     <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
                         <small class="fab fa-google text-primary"></small>
@@ -667,73 +322,84 @@
                   
 
     </div>
-
     <!-- </div> -->
 
 
-    <!-- Features Start -->
     <div class="container-xxl feature py-5">
         <div class="container">
             <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Services</p>
                     <h1 class="display-5 mb-4">Services We Are Provide</h1>
-                    
-                </div>
-                <div class="col-lg-6">
-                    <div class="row g-4 align-items-center">
-                        <div class="col-md-6">
-                            <div class="row g-4">
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
-                                    <div class="feature-box border rounded p-4 text-center ">
-                                        <!-- <i class="fa fa-check fa-3x text-primary mb-3"></i> -->
+                    <div class="row g-4">
+                        <div class="col-md-6 col-12 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="feature-box border rounded p-4 text-center ">
+                                <div class="row">
+                                    <div class="col-md-5">
                                         <img src="img/translation-icon-1.png" alt="" style="height: 50px; width: 50px; max-height: 50;">
                                         <h4 class="mb-3">Translation</h4>
+                                    </div>
+                                    <div class="col-md-7 d-flex align-items-center ">
                                         <p class="mb-3">All types of translation</p>
-                                        
                                     </div>
-                                </div>
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
-                                    <div class="feature-box border rounded p-4 text-center ">
-                                        <!-- <i class="fa fa-check fa-3x text-primary mb-3"></i> -->
-                                        <img src="img/interpreter-icon.png" alt="" style="height: 50px; width: 50px; max-height: 50px;">
-                                        <h4 class="mb-3">Interpretation</h4>
-                                        <p class="mb-3">Simultaneous and consecutive</p>
-                                        
-                                    </div>
-                                </div>
+                                </div>                                
+                              
+                                
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="row g-4">
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
-                                    <div class="feature-box border rounded p-4 text-center ">
-                                        <!-- <i class="fa fa-check fa-3x text-primary mb-3"></i> -->
-                                        <img src="img/translation-person-icon.png" alt="" style="height: 80px; width: 80px; max-height: 50;">
+                        <div class="col-md-6 col-12 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="feature-box border rounded p-4 text-center ">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <img src="img/interpreter-icon.png" alt="" style="height: 50px; width: 50px; max-height: 50px;">
+                                        <h4 class="mb-3">Interpretation</h4>
+                                    </div>
+                                    <div class="col-md-7 d-flex align-items-center ">
+                                        <p class="mb-3">Simultaneous and consecutive</p>
+
+                                    </div>
+                                </div>
+                             
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="feature-box border rounded p-4 text-center ">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <img src="img/translation-person-icon.png" alt="" style="height: 50px; width: 50px; max-height: 50;">
                                         <h4 class="mb-3">Accompanying accredited translator</h4>
+                                    </div>
+                                    <div class="col-md-7 d-flex align-items-center ">
                                         <p class="mb-3">When required, we will assign you an accredited translator to accompany you to finish your job duly. </p>
-                                        
                                     </div>
-                                </div>
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
-                                    <div class="feature-box border rounded p-4 text-center ">
-                                        <!-- <i class="fa fa-check fa-3x text-primary mb-3"></i> -->
-                                        
-                                        <img src="img/fluent.png" alt="" style="height: 80px; width: 80px; max-height: 50;">
-                                        
+                                </div>                                
+                              
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="feature-box border rounded p-4 text-center ">
+                                
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <img src="img/fluent.png" alt="" style="height: 50px; width: 50px; max-height: 50px;">
+                                
                                         <h4 class="mb-3">Teaching adults</h4>
+                                    </div>
+                                    <div class="col-md-7 d-flex align-items-center ">
                                         <p class="mb-3">We teach adults of different ages how to translate and write professional English to assist the organization they work for. </p>
-                                        
+
                                     </div>
                                 </div>
+                               
+                                
                             </div>
                         </div>
                     </div>
-                </div>
+              
             </div>
         </div>
     </div>
-    <!-- Features End -->
+  
 
     <!-- Facts Start -->
     <div class="container-fluid facts my-5 py-5">
@@ -774,7 +440,7 @@
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Services</p>
-                <h1 class="display-5 mb-5">Awesome Translation Services</h1>
+                <h1 class="display-5 mb-5">Our Translation Services</h1>
             </div>
             <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="col-lg-4">
@@ -985,7 +651,7 @@
             <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.3s">
                 <div class="partner-item pe-3 pb-5">
                     <div class="partner-image mb-3 rounded-circle">
-                        <img class="img-fluid " src="img/client_1.png" alt="Partner 1" style="height: 80%; width: 80%;">
+                        <img class="img-fluid " src="img/Partners/client_1.png" alt="Partner 1" style="height: 80%; width: 80%;">
                     </div>
                     <!-- <div class="partner-title">
                         <p>ميزانية الدولة</p>
@@ -993,23 +659,16 @@
                 </div>
                 <div class="partner-item pe-3 pb-5">
                     <div class="partner-image mb-3 rounded-circle">
-                        <img class="img-fluid " src="img/client_2.png" alt="Partner 2" style="height: 80%; width: 80%;">
+                        <img class="img-fluid " src="img/Partners/client_2.png" alt="Partner 2">
                     </div>
                     <!-- <div class="partner-title">
                         <h4 class="mb-0">XYZ Enterprises</h4>
                     </div> -->
                 </div>
+
                 <div class="partner-item pe-3 pb-5">
-                    <div class="partner-image mb-3 rounded-circle">
-                        <img class="img-fluid " src="img/client_3.png" alt="Partner 3" style="height: 80%; width: 80%;">
-                    </div>
-                    <!-- <div class="partner-title">
-                        <h4 class="mb-0">123 Solutions</h4>
-                    </div> -->
-                </div>
-                <div class="partner-item pe-3 pb-5">
-                    <div class="partner-image mb-3 rounded-circle">
-                        <img class="img-fluid " src="img/client_4.png" alt="Partner 4">
+                    <div class="partner-image-1 mb-3 rounded-circle">
+                        <img class="img-fluid " src="img/Partners/client_11.png" alt="Partner 11">
                     </div>
                     <!-- <div class="partner-title">
                         <h4 class="mb-0">123 Solutions</h4>
@@ -1017,27 +676,16 @@
                 </div>
 
                 <div class="partner-item pe-3 pb-5">
-                    <div class="partner-image mb-3 rounded-circle">
-                        <img class="img-fluid " src="img/client_5.jpg" alt="Partner 5">
+                    <div class="partner-image-1 mb-3 rounded-circle">
+                        <img class="img-fluid " src="img/Partners/client_12.jpg" alt="Partner 12">
                     </div>
                     <!-- <div class="partner-title">
                         <h4 class="mb-0">123 Solutions</h4>
                     </div> -->
                 </div>
-
                 <div class="partner-item pe-3 pb-5">
                     <div class="partner-image mb-3 rounded-circle">
-                        <img class="img-fluid " src="img/client_6.png" alt="Partner 6">
-                    </div>
-                    <!-- <div class="partner-title">
-                        <h4 class="mb-0">123 Solutions</h4>
-                    </div> -->
-                </div>
-
-
-                <div class="partner-item pe-3 pb-5">
-                    <div class="partner-image mb-3 rounded-circle">
-                        <img class="img-fluid " src="img/client_7.jpeg" alt="Partner 7">
+                        <img class="img-fluid " src="img/Partners/client_3.jpg" alt="Partner 3" >
                     </div>
                     <!-- <div class="partner-title">
                         <h4 class="mb-0">123 Solutions</h4>
@@ -1046,7 +694,33 @@
 
                 <div class="partner-item pe-3 pb-5">
                     <div class="partner-image mb-3 rounded-circle">
-                        <img class="img-fluid " src="img/client_8.png" alt="Partner 8">
+                        <img class="img-fluid " src="img/Partners/client_4.png" alt="Partner 4">
+                    </div>
+                    <!-- <div class="partner-title">
+                        <h4 class="mb-0">123 Solutions</h4>
+                    </div> -->
+                </div>
+                <div class="partner-item pe-3 pb-5">
+                    <div class="partner-image mb-3 rounded-circle">
+                        <img class="img-fluid " src="img/Partners/client_5.jpeg" alt="Partner 5" >
+                    </div>
+                    <!-- <div class="partner-title">
+                        <h4 class="mb-0">123 Solutions</h4>
+                    </div> -->
+                </div>
+
+                <div class="partner-item pe-3 pb-5">
+                    <div class="partner-image-1 mb-3 rounded-circle">
+                        <img class="img-fluid " src="img/Partners/client_14.jpeg" alt="Partner 14">
+                    </div>
+                    <!-- <div class="partner-title">
+                        <h4 class="mb-0">123 Solutions</h4>
+                    </div> -->
+                </div>
+
+                <div class="partner-item pe-3 pb-5">
+                    <div class="partner-image-1 mb-3 rounded-circle">
+                        <img class="img-fluid " src="img/Partners/client_15.png" alt="Partner 15">
                     </div>
                     <!-- <div class="partner-title">
                         <h4 class="mb-0">123 Solutions</h4>
@@ -1055,7 +729,16 @@
 
                 <div class="partner-item pe-3 pb-5">
                     <div class="partner-image mb-3 rounded-circle">
-                        <img class="img-fluid " src="img/client_9.jpg" alt="Partner 9">
+                        <img class="img-fluid " src="img/Partners/client_6.png" alt="Partner 6">
+                    </div>
+                    <!-- <div class="partner-title">
+                        <h4 class="mb-0">123 Solutions</h4>
+                    </div> -->
+                </div>
+
+                <div class="partner-item pe-3 pb-5">
+                    <div class="partner-image mb-3 rounded-circle">
+                        <img class="img-fluid " src="img/Partners/client_7.png" alt="Partner 7">
                     </div>
                     <!-- <div class="partner-title">
                         <h4 class="mb-0">123 Solutions</h4>
@@ -1065,16 +748,42 @@
 
                 <div class="partner-item pe-3 pb-5">
                     <div class="partner-image mb-3 rounded-circle">
-                        <img class="img-fluid " src="img/client_10.png" alt="Partner 10">
+                        <img class="img-fluid " src="img/Partners/client_8.png" alt="Partner 8">
                     </div>
                     <!-- <div class="partner-title">
                         <h4 class="mb-0">123 Solutions</h4>
                     </div> -->
                 </div>
 
+                
+
                 <div class="partner-item pe-3 pb-5">
                     <div class="partner-image mb-3 rounded-circle">
-                        <img class="img-fluid " src="img/client_11.jpg" alt="Partner 11">
+                        <img class="img-fluid " src="img/Partners/client_9.png" alt="Partner 9">
+                    </div>
+                    <!-- <div class="partner-title">
+                        <h4 class="mb-0">123 Solutions</h4>
+                    </div> -->
+                </div>
+
+
+              
+
+                <div class="partner-item pe-3 pb-5">
+                    <div class="partner-image-1 mb-3 rounded-circle">
+                        <img class="img-fluid " src="img/Partners/client_13.jpg" alt="Partner 13">
+                    </div>
+                    <!-- <div class="partner-title">
+                        <h4 class="mb-0">123 Solutions</h4>
+                    </div> -->
+                </div>
+
+
+               
+
+                <div class="partner-item pe-3 pb-5">
+                    <div class="partner-image-1 mb-3 rounded-circle">
+                        <img class="img-fluid " src="img/Partners/client_16.png" alt="Partner 16">
                     </div>
                     <!-- <div class="partner-title">
                         <h4 class="mb-0">123 Solutions</h4>
@@ -1088,7 +797,7 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s" style="background-color: rgb(7, 7, 7);">
     <div class="container py-5">
         <div class="row g-5">
             <div class="col-lg-6 col-md-6 col-12">
@@ -1104,6 +813,8 @@
                             class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
                             class="fab fa-instagram"></i></a>
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
                     <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
                             class="fab fa-google"></i></a>
                 </div>
@@ -1139,13 +850,13 @@
             class="bi bi-arrow-up" style="color: white;"></i></a>
 
             <div class="float-buttons">
-                <div class="d-flex justify-content-center">
+                <!-- <div class="d-flex justify-content-center">
                     <a href="tel:+00201204201963" target="_blank">
                         <img src="img/phone_icon.png" height="55" width="55" alt="WhatsApp">
                     </a>
-                </div>
+                </div> -->
         
-                <a href="https://api.whatsapp.com/send?phone=00201275234701" target="_blank">
+                <a href="https://api.whatsapp.com/send?phone=201275234701" target="_blank">
                     <img src="img/whatsapp_logo.webp" alt="WhatsApp" class="whatsapp-icon">
                 </a>
         
